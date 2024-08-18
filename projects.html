@@ -23,7 +23,7 @@
         h1 {
             color: #333;
             font-size: 2.2em;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         ul {
             list-style: none;
@@ -34,6 +34,14 @@
             font-size: 1.1em;
             color: #666;
         }
+        a.project-link {
+            color: #666;
+            text-decoration: none;
+        }
+        a.project-link:hover {
+            color: #007BFF;
+            text-decoration: underline;
+        }
         .back-button {
             background-color: #78866B;
             color: white;
@@ -42,6 +50,8 @@
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
+            margin-top: 30px;
+            display: inline-block;
         }
         .back-button:hover {
             background-color: #828E84;
@@ -52,8 +62,8 @@
     <div class="container">
         <h1>My Projects</h1>
         <ul>
-            <li><strong>Carbon Calculator:</strong> A tool designed to help users track and reduce their carbon footprint.</li>
-            <li><strong>Trash Picker:</strong> An app that incentivizes community cleanup by allowing users to log trash pickups and earn rewards.</li>
+            <li><a href="https://apps.apple.com/us/app/trash-picker-3d/id1530897872" class="project-link" target="_blank">Trash Picker</a>: A mobile game I developed in 8th grade, where players are encouraged to pick up trash and clean up virtual environments.</li>
+            <li><a href="https://www.kaggle.com/code/shuuks/carbon" class="project-link" target="_blank">Carbon Footprint Calculator</a>: A sophisticated CO2 calculator currently in development on Xcode. It predicts and calculates a "green score" for users using advanced AI, decision trees, and learning models.</li>
         </ul>
         <a href="index.html" class="back-button">Back</a>
     </div>
